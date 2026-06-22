@@ -8,9 +8,9 @@
 
 > Cap a Claude Code session in **tokens or dollars**. When spend crosses the line — your subagents counted — the run **halts cleanly**. It auto-arms **$50** the moment you start a `/goal`, and trips when an agent gets stuck in a loop.
 
-Native hook. No proxy, no API key, nothing leaves your machine, fully within Anthropic's Terms of Service.
+![burnstop halting a session when the budget is exhausted](docs/burnstop.png)
 
-**Created by:** [The Product Compass Newsletter](https://www.productcompass.pm)
+Native hook. No proxy, no API key, nothing leaves your machine, fully within Anthropic's Terms of Service.
 
 ---
 
