@@ -1,0 +1,31 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "*",
+      "hooks": [
+        { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hook.py\"" }
+      ]
+    }
+  ],
+  "Stop": [
+    {
+      "hooks": [
+        { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hook.py\"" }
+      ]
+    }
+  ],
+  "SubagentStop": [
+    {
+      "hooks": [
+        { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hook.py\"" }
+      ]
+    }
+  ],
+  "UserPromptExpansion": [
+    {
+      "hooks": [
+        { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/dispatch.py\"" }
+      ]
+    }
+  ]
+}

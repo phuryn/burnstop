@@ -1,0 +1,23 @@
+name: tests
+
+on:
+  push:
+    branches: [main, DEV]
+  pull_request:
+    branches: [main, DEV]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run tests (stdlib unittest, no deps)
+        run: python -m unittest discover -s tests -v

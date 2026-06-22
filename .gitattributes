@@ -1,0 +1,4 @@
+# Normalize line endings to LF in the repo so install.sh and the hooks run on
+# macOS/Linux even when committed from Windows.
+* text=auto eol=lf
+*.png binary

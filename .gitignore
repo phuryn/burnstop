@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Test / tooling
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# burnstop runtime state (per-session arm files live in ~/.claude/burnstop,
+# but ignore any that get written under the repo by accident)
+.burnstop/
+burnstop-*.json
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

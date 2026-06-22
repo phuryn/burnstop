@@ -1,0 +1,18 @@
+{
+  "name": "burnstop",
+  "description": "Stop runaway agents in Claude Code: cap a session in tokens or dollars and halt runaway goals/loops. Auto-arms $50 on /goal.",
+  "version": "1.0.0",
+  "author": { "name": "Pawel Huryn", "url": "https://github.com/phuryn" },
+  "homepage": "https://github.com/phuryn/burnstop",
+  "license": "MIT",
+  "keywords": ["budget", "cost", "tokens", "hooks", "guardrail", "goal"],
+  "commands": [
+    "./commands/budget.md",
+    "./commands/budget-arm.md",
+    "./commands/budget-status.md",
+    "./commands/budget-reset.md",
+    "./commands/budget-disarm.md",
+    "./commands/budget-default.md"
+  ],
+  "hooks": "./hooks/hooks.json"
+}

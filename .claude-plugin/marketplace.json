@@ -1,0 +1,12 @@
+{
+  "name": "burnstop",
+  "owner": { "name": "Pawel Huryn", "url": "https://github.com/phuryn" },
+  "plugins": [
+    {
+      "name": "burnstop",
+      "source": "./",
+      "description": "Stop runaway agents in Claude Code: cap a session in tokens or dollars; halt runaway goals and loops. Auto-arms $50 on /goal.",
+      "version": "1.0.0"
+    }
+  ]
+}
